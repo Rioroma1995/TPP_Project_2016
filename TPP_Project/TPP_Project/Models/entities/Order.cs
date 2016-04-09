@@ -5,8 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
+using TPP_Project.Models.enums;
 
-namespace TPP_Project.Models
+namespace TPP_Project.Models.entities
 {
     [Bind(Exclude = "OrderId")]
     public class Order

@@ -7,9 +7,9 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using TPP_Project.Models;
+using TPP_Project.Models.enums;
 
-namespace TPP_Project.Models
+namespace TPP_Project.Models.entities
 {
     [Bind(Exclude = "ID")]
     public class ProductItem

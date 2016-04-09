@@ -9,7 +9,7 @@ using DotNetOpenAuth.AspNet;
 using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
 using TPP_Project.Filters;
-using TPP_Project.Models;
+using TPP_Project.Models.entities;
 
 namespace TPP_Project.Controllers
 {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace TPP_Project.Models
+namespace TPP_Project.Models.enums
 {
     public enum TaskStatus { Initial, InProgress, OnHold, Completed};
     public enum ProjectStatus { Initial, InProgress, OnHold, Completed};

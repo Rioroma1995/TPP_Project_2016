@@ -6,7 +6,7 @@ using System.Data.Entity;
 using System.Globalization;
 using System.Web.Security;
 
-namespace TPP_Project.Models
+namespace TPP_Project.Models.entities
 {
     public class UsersContext : DbContext
     {

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using TPP_Project.Models;
+using TPP_Project.Models.enums;
 
-namespace TPP_Project.Models
+namespace TPP_Project.Models.entities
 {
     public class Project
     {

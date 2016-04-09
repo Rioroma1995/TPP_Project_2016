@@ -4,7 +4,7 @@ using System.Data.Entity.Infrastructure;
 using System.Threading;
 using System.Web.Mvc;
 using WebMatrix.WebData;
-using TPP_Project.Models;
+using TPP_Project.Models.entities;
 
 namespace TPP_Project.Filters
 {

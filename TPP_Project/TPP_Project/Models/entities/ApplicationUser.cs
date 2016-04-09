@@ -8,7 +8,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace TPP_Project.Models
+namespace TPP_Project.Models.entities
 {
     public class ApplicationUser : IdentityUser
     {
