@@ -211,6 +211,7 @@
     <Compile Include="Models\entities\WorkItem.cs" />
     <Compile Include="Models\enums\Roles.cs" />
     <Compile Include="Models\viewModels\AdminViewModel.cs" />
+    <Compile Include="Models\viewModels\EditUserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
