@@ -240,6 +240,7 @@
     <Compile Include="Models\entities\Catagorie.cs" />
     <Compile Include="Models\entities\Customer.cs" />
     <Compile Include="Models\entities\Manager.cs" />
+    <Compile Include="Models\entities\Operator.cs" />
     <Compile Include="Models\enums\Enums.cs" />
     <Compile Include="Models\entities\Order.cs" />
     <Compile Include="Models\entities\OrderDetail.cs" />
@@ -321,7 +322,6 @@
     <Content Include="css\carousel.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Global.asax" />
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap-theme.min.css.map" />
     <Content Include="css\bootstrap.css.map" />
@@ -331,6 +331,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Global.asax" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\npm.js" />
