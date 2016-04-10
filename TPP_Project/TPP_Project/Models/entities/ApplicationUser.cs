@@ -17,6 +17,7 @@ namespace TPP_Project.Models.entities
             var userIdentity = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);
             return userIdentity;
         }
+        public ICollection<ApplicationUserRole> UserRoles { get; set; }
 
         [Required]
         public string FistName { get; set; }
