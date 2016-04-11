@@ -58,13 +58,6 @@ namespace TPP_MainProject.Controllers
 
             //return View(unitOfWork.ProductItemRepository.Get().ToList());
         } 
-    /* public ActionResult Index()
-        {
-          
-            IEnumerable<WorkItem> workItems =  unitOfWork.WorkItemRepository.Get();
-            return View(workItems);
-        }
-     * */
 
      public ActionResult Details(int id)
         {
@@ -126,53 +119,10 @@ namespace TPP_MainProject.Controllers
                  workI.Status= model.Status;
                  unitOfWork.WorkItemRepository.Update(workI);
                 unitOfWork.Save();
-
-                // _db.Entry(user).State = EntityState.Modified;
-
-                // TODO
-                // _db.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(model);
         }
-
-        // POST: /Worker/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Edit([Bind(Include="Id,FistName,LastName,Organization,City,Country,Email,EmailConfirmed,PasswordHash,SecurityStamp,PhoneNumber,PhoneNumberConfirmed,TwoFactorEnabled,LockoutEndDateUtc,LockoutEnabled,AccessFailedCount,UserName,Salary,startWorkDate")] Worker worker)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        db.Entry(worker).State = EntityState.Modified;
-        //        db.SaveChanges();
-        //        return RedirectToAction("Index");
-        //    }
-        //    return View(worker);
-        //}
-
-        //// GET: /Worker/Delete/5
-       /* public ActionResult Delete(int id)
-        {
-            WorkItem workI = unitOfWork.WorkItemRepository.GetByID(id);
-            if (workI == null)
-            {
-                return HttpNotFound();
-            }
-            return View(workI);
-        }*/
-
-        //// POST: /Worker/Delete/5
-        //[HttpPost, ActionName("Delete")]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult DeleteConfirmed(string id)
-        //{
-        //    Worker worker = db.Users.Find(id);
-        //    db.Users.Remove(worker);
-        //    db.SaveChanges();
-        //    return RedirectToAction("Index");
-        //}
 
         protected override void Dispose(bool disposing)
         {
