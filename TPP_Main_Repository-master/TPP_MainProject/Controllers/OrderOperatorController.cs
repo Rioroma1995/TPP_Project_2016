@@ -66,7 +66,6 @@ namespace TPP_MainProject.Controllers
              
                 pro.order = ord;
                 pro.costs = ord.Total;
-                //глаза мои етого не видели и руки не писали @Pifagor
                 IEnumerable<ApplicationUser> them =  unitOfWork.UserRepository.Get().Where(s => s.RoleName.Equals(RolesConst.MANAGER));
                 foreach (ApplicationUser manager in them)
                 {
@@ -83,100 +82,6 @@ namespace TPP_MainProject.Controllers
             }
             return View();
         }
-
-        //// GET: /OrderOperator/Details/5
-        //public ActionResult Details(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-        //    }
-        //    Order order = db.Orders.Find(id);
-        //    if (order == null)
-        //    {
-        //        return HttpNotFound();
-        //    }
-        //    return View(order);
-        //}
-
-        //// GET: /OrderOperator/Create
-        //public ActionResult Create()
-        //{
-        //    return View();
-        //}
-
-        //// POST: /OrderOperator/Create
-        //// To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        //// more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Create([Bind(Include="id,orderDate,completeDate,orderStartus,detailDescription,Total")] Order order)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        db.Orders.Add(order);
-        //        db.SaveChanges();
-        //        return RedirectToAction("Index");
-        //    }
-
-        //    return View(order);
-        //}
-
-        //// GET: /OrderOperator/Edit/5
-        //public ActionResult Edit(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-        //    }
-
-        //    Order order = unitOfWork.OrderRepository.GetByID(id);
-        //    //activeOrders = unitOfWork.OrderRepository.Get().Where(s => s.orderStartus.Equals(OrderStatus.Initiating));
-        //    //foreach (Order item in activeOrders)
-        //    //{
-        //    //    if (item.id == id)
-        //    //        order = item;
-        //    //}
-        //    if (order == null)
-        //    {
-        //        return HttpNotFound();
-        //    }
-        //    return View(order);
-        //}
-
-        //// POST: /OrderOperator/Edit/5
-        //// To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        //// more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Edit([Bind(Include="id,orderDate,completeDate,orderStartus,detailDescription,Total")] Order order)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        db.Entry(order).State = EntityState.Modified;
-        //        db.SaveChanges();
-        //        return RedirectToAction("Index");
-        //    }
-        //    return View(order);
-        //}
-
-        //// GET: /OrderOperator/Delete/5
-        //public ActionResult Delete(int? id)
-        //{
-        //    IEnumerable<Project> newProjects = unitOfWork.ProjectRepository.Get();
-        //     return View();
-        //}
-
-        //// POST: /OrderOperator/Delete/5
-        //[HttpPost, ActionName("Delete")]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult DeleteConfirmed(int id)
-        //{
-        //    Order order = db.Orders.Find(id);
-        //    db.Orders.Remove(order);
-        //    db.SaveChanges();
-        //    return RedirectToAction("Index");
-        //}
 
         protected override void Dispose(bool disposing)
         {
